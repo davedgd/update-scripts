@@ -1,32 +1,32 @@
 #!/bin/bash
 
-printf "\n"; clear
+clear
 
-printf "### TeX ###\n\n"
+printf "\n### TeX ###\n\n"
 tlmgr update --self
 tlmgr update --all
 
-printf "\n"; clear
+clear
 
-printf "### Homebrew ###\n\n"
+printf "\n### Homebrew ###\n\n"
 brew update
 brew upgrade
 brew cask upgrade
 brew cleanup -s -prune=0
 
-printf "\n"; clear
+clear
 
-printf "### Python ###\n\n"
+printf "\n### Python ###\n\n"
 pip-review --auto
 
-printf "\n"; clear
+clear
 
-printf "### R ###\n\n"
+printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://cloud.r-project.org")')
 
-printf "\n"; clear
+clear
 
-printf "### macOS ###\n\n"
+printf "\n### macOS ###\n\n"
 softwareupdate -i -a
 
-printf "\n"; clear
+clear
