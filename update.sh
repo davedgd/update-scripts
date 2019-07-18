@@ -23,3 +23,8 @@ printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://cloud.r-project.org")')
 
 clear
+
+printf "\n### macOS ###\n\n"
+softwareupdate -i -a
+
+clear
