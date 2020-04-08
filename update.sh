@@ -2,17 +2,17 @@
 
 clear
 
-printf "\n### TeX ###\n\n"
-tlmgr update --self
-tlmgr update --all
-
-clear
-
 printf "\n### Homebrew ###\n\n"
 brew update
 brew upgrade
 brew cask upgrade
 brew cleanup -s -prune=0
+
+clear
+
+printf "\n### TeX ###\n\n"
+tlmgr update --self
+tlmgr update --all
 
 clear
 
