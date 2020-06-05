@@ -3,6 +3,7 @@ Update scripts for various OSes
 
 # Windows: update.bat
 - Chocolatey
+- Windows Store
 - Python (via pip-review)
 - R (binaries)
 - Windows Updates
