@@ -6,7 +6,7 @@ printf "\n### Homebrew ###\n\n"
 brew update
 brew upgrade
 brew cask upgrade
-brew cleanup -s -prune=0
+brew cleanup -s --prune='all'
 
 clear
 
@@ -17,7 +17,8 @@ tlmgr update --all
 clear
 
 printf "\n### Python ###\n\n"
-pip-review --auto
+#pip-review --auto
+conda update --all
 
 clear
 
