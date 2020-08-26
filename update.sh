@@ -18,7 +18,7 @@ clear
 
 printf "\n### Python ###\n\n"
 #pip-review --auto
-conda update --all
+conda update --all -y
 
 clear
 
