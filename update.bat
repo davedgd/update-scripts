@@ -19,5 +19,5 @@ set packages=%packages% %1
 goto :eof
 
 :continue
-conda update --all -y
-conda clean --all -y
+call conda update --all -y
+call conda clean --all -y
