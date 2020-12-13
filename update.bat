@@ -20,3 +20,4 @@ goto :eof
 
 :continue
 conda update --all -y
+conda clean --all -y
