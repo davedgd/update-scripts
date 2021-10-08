@@ -12,9 +12,9 @@ tlmgr update --all
 
 printf "\n### Python ###\n\n"
 #pip-review --auto
-conda update --all -y "libblas=*=*mkl"
-conda list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
-conda clean --all -y
+mamba update --all -y
+mamba list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
+mamba clean --all -y
 
 printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://cloud.r-project.org")')
