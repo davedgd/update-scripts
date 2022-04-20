@@ -20,7 +20,9 @@ printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://cloud.r-project.org")')
 
 printf "\n### App Store ###\n\n"
-brew install mas # requires mas-cli: brew install mas
+# requires mas-cli: brew install mas
+mas outdated
+Was upgrade
 
 printf "\n### macOS ###\n\n"
 softwareupdate -i -a
