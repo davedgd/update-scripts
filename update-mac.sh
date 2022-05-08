@@ -22,7 +22,7 @@ Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://
 printf "\n### App Store ###\n\n"
 # requires mas-cli: brew install mas
 mas outdated
-Was upgrade
+mas upgrade
 
 printf "\n### macOS ###\n\n"
-softwareupdate -i -a
+softwareupdate -ia
