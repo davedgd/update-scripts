@@ -1,6 +1,10 @@
 choco upgrade all -y
 call tlmgr update --self
 call tlmgr update --all
+
+@rem call miktex packages update
+@rem call miktex --admin packages update
+
 powershell -command "Get-CimInstance -Namespace \"Root\cimv2\mdm\dmmap\" -ClassName \"MDM_EnterpriseModernAppManagement_AppManagement01\" | Invoke-CimMethod -MethodName UpdateScanMethod"
 @rem pip-review --auto
 Rscript -e "update.packages(type = 'binary', ask = FALSE, repos = 'https://cloud.r-project.org')"
