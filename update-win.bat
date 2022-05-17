@@ -1,14 +1,47 @@
+@echo off
+echo.
+echo ### Chocolatey ###
+@echo on
+
 choco upgrade all -y
+
+@echo off
+echo.
+echo ### TinyTeX ###
+@echo on
+
 call tlmgr update --self
 call tlmgr update --all
 
-@rem call miktex packages update
-@rem call miktex --admin packages update
+@rem @echo off
+@rem echo.
+@rem echo ### MiKTeX ###
+@rem @echo on
+
+@rem miktex packages update
+@rem miktex --admin packages update
+
+@echo off
+echo.
+echo ### Microsoft Store ###
+@echo on
 
 powershell -command "Get-CimInstance -Namespace \"Root\cimv2\mdm\dmmap\" -ClassName \"MDM_EnterpriseModernAppManagement_AppManagement01\" | Invoke-CimMethod -MethodName UpdateScanMethod"
-@rem pip-review --auto
+
+@echo off
+echo.
+echo ### R ###
+@echo on
+
 Rscript -e "update.packages(type = 'binary', ask = FALSE, repos = 'https://cloud.r-project.org')"
 UsoClient ScanInstallWait
+
+@echo off
+echo.
+echo ### Python ###
+@echo on
+
+@rem pip-review --auto
 
 @rem goto skip
 
