@@ -34,6 +34,12 @@ echo ### R ###
 @echo on
 
 Rscript -e "update.packages(type = 'binary', ask = FALSE, repos = 'https://cloud.r-project.org')"
+
+@echo off
+echo.
+echo ### Windows Update ###
+@echo on
+
 UsoClient ScanInstallWait
 
 @echo off
