@@ -6,7 +6,7 @@ brew upgrade
 brew upgrade --cask
 brew cleanup -s --prune='all'
 
-printf "\n### TeX ###\n\n"
+printf "\n### LaTeX ###\n\n"
 tlmgr update --self
 tlmgr update --all
 
