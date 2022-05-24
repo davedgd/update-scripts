@@ -3,19 +3,18 @@ Update scripts for various OSes
 
 # Windows: update.bat
 - Chocolatey
-- Windows Store
-- Python (via conda/pip)
+- LaTeX (TinyTeX/MiKTeX)
+- Microsoft Store
 - R (binaries)
-- Windows Updates
+- Windows Update
+- Python
 
 # Mac: update.sh
-- TeX
-- Brew (including Casks)
-- Python (via conda/pip)
+- Homebrew (including Casks)
+- LaTeX
+- Python
 - R (binaries)
+- Mac App Store
 - macOS Updates
 
-# Ubuntu Linux: update-ubuntu.sh
-- Ubuntu Updates (via apt)
-- Python (via pip-review)
-- R (sources)
+# And various Linux distributions...
