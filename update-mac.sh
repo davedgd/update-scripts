@@ -19,7 +19,7 @@ mamba clean --all -y
 printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "binary", ask = FALSE, repos = "https://cloud.r-project.org")')
 
-printf "\n### App Store ###\n\n"
+printf "\n### Mac App Store ###\n\n"
 # requires mas-cli: brew install mas
 mas outdated
 mas upgrade
