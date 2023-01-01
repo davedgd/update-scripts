@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade -y
 
 printf "\n### Python ###\n\n"
-pip-review --auto
+mamba update --all
 
 printf "\n### R ###\n\n"
 Rscript <(echo $'update.packages(type = "source", ask = FALSE, repos = "https://cloud.r-project.org")')
