@@ -7,7 +7,7 @@ sudo apt update
 sudo apt upgrade -y
 
 printf "\n### Python ###\n\n"
-mamba update --all
+mamba update --all -y
 mamba list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
 mamba clean --all -y
 
