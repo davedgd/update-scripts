@@ -6,6 +6,9 @@ printf "\n### OS ###\n\n"
 sudo apt update
 sudo apt upgrade -y
 
+printf "\n### Snaps ###\n\n"
+sudo snap refresh
+
 printf "\n### Python ###\n\n"
 mamba update --all -y
 mamba list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
