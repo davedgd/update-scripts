@@ -4,7 +4,8 @@ clear
 
 printf "\n### OS ###\n\n"
 sudo apt update
-sudo apt upgrade -y
+sudo apt upgrade -y --allow-downgrades
+sudo apt autoremove -y
 
 printf "\n### Snaps ###\n\n"
 sudo snap refresh
