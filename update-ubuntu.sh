@@ -10,6 +10,10 @@ sudo apt autoremove -y
 printf "\n### Snaps ###\n\n"
 sudo snap refresh
 
+printf "\n### LaTeX ###\n\n"
+tlmgr update --self
+tlmgr update --all
+
 printf "\n### Python ###\n\n"
 mamba update --all -y
 mamba list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
