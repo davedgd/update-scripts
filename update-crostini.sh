@@ -8,7 +8,7 @@ sudo apt upgrade -y
 sudo apt autoremove -y
 
 printf "\n### Flatpak ###\n\n"
-flatpak update
+flatpak update -y
 
 printf "\n### Python ###\n\n"
 mamba update --all -y
