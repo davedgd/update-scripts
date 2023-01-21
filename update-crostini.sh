@@ -4,7 +4,7 @@ clear
 
 printf "\n### OS ###\n\n"
 sudo apt update
-sudo apt upgrade -y
+sudo apt dist-upgrade -y
 sudo apt autoremove -y
 
 printf "\n### Flatpak ###\n\n"
