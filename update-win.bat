@@ -21,6 +21,13 @@ call tlmgr update --all
 @rem miktex packages update
 @rem miktex --admin packages update
 
+@rem @echo off
+@rem echo.
+@rem echo ### WSL ###
+@rem @echo on
+
+@rem wsl --update
+
 @echo off
 echo.
 echo ### Microsoft Store ###
