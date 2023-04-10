@@ -21,12 +21,12 @@ call tlmgr update --all
 @rem miktex packages update
 @rem miktex --admin packages update
 
-@rem @echo off
-@rem echo.
-@rem echo ### WSL ###
-@rem @echo on
+@echo off
+echo.
+echo ### WSL ###
+@echo on
 
-@rem wsl --update
+wsl --update
 
 @echo off
 echo.
