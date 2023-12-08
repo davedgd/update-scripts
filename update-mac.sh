@@ -17,7 +17,7 @@ printf "\n### Python ###\n\n"
 #pip-review --auto
 mamba update --all -y
 mamba list | grep pypi | cut -d' ' -f1 | xargs pip install --upgrade # update pip packages
-mamba clean --all -y
+conda clean --all -y # swap for conda to fix temporary bug
 
 printf "\n### Mac App Store ###\n\n"
 # requires mas-cli: brew install mas
